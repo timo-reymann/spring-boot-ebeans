@@ -1,4 +1,4 @@
-package de.timo_reymann.springboot.ebean.dao;
+package com.github.timo_reymann.springboot.ebean.dao;
 
 import io.ebean.Query;
 

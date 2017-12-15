@@ -1,6 +1,6 @@
-package de.timo_reymann.springboot.ebean.annotation;
+package com.github.timo_reymann.springboot.ebean.annotation;
 
-import de.timo_reymann.springboot.ebean.autoconfiguration.EbeanAutoConfiguration;
+import com.github.timo_reymann.springboot.ebean.autoconfiguration.EbeanAutoConfiguration;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.Retention;

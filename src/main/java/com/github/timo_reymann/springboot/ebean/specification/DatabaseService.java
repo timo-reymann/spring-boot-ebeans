@@ -1,6 +1,6 @@
-package de.timo_reymann.springboot.ebean.specification;
+package com.github.timo_reymann.springboot.ebean.specification;
 
-import de.timo_reymann.springboot.ebean.dao.GenericDAO;
+import com.github.timo_reymann.springboot.ebean.dao.GenericDAO;
 import io.ebean.EbeanServer;
 import lombok.AccessLevel;
 import lombok.Getter;

@@ -1,6 +1,6 @@
-package de.timo_reymann.springboot.ebean.autoconfiguration;
+package com.github.timo_reymann.springboot.ebean.autoconfiguration;
 
-import de.timo_reymann.springboot.ebean.config.EbeanConfig;
+import com.github.timo_reymann.springboot.ebean.config.EbeanConfig;
 import io.ebean.config.AutoTuneConfig;
 import io.ebean.config.AutoTuneMode;
 import io.ebean.config.CurrentUserProvider;
@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Primary;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -22,6 +23,7 @@ import javax.sql.DataSource;
  */
 @EnableTransactionManagement
 @Slf4j
+@ComponentScan("com.github.timo_reymann.springboot.ebean")
 public class EbeanAutoConfiguration {
 
     @Qualifier("dataSource")

@@ -1,4 +1,4 @@
-package de.timo_reymann.springboot.ebean.config;
+package com.github.timo_reymann.springboot.ebean.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

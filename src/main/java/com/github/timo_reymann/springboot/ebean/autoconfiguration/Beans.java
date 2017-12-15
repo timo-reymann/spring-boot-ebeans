@@ -1,4 +1,4 @@
-package de.timo_reymann.springboot.ebean.autoconfiguration;
+package com.github.timo_reymann.springboot.ebean.autoconfiguration;
 
 import io.ebean.EbeanServer;
 import io.ebean.EbeanServerFactory;
