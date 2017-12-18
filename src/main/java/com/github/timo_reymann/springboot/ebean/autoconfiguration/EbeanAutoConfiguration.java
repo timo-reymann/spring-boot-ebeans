@@ -54,14 +54,17 @@ public class EbeanAutoConfiguration {
         config.setDefaultServer(true);
         config.setRegister(true);
 
-        logSetting("autoCommitMode", ebeanConfig.isAutoCommit());
-        config.setAutoCommitMode(ebeanConfig.isAutoCommit());
-
         logSetting("expressionsNativeILike", ebeanConfig.isSetExpressionNativeIlike());
         config.setExpressionNativeIlike(ebeanConfig.isSetExpressionNativeIlike());
 
         logSetting("currentUserProvider", currentUserProvider.getClass().getName());
         config.setCurrentUserProvider(currentUserProvider);
+
+        logSetting("ddlGenerate", ebeanConfig.isDdlGenerate());
+        config.setDdlGenerate(ebeanConfig.isDdlGenerate());
+
+        logSetting("ddlRun", ebeanConfig.isDdlRun());
+        config.setDdlRun(ebeanConfig.isDdlRun());
 
         if (ebeanConfig.isEnableAutoTune()) {
             logSetting("auto tune", ebeanConfig.isEnableAutoTune());

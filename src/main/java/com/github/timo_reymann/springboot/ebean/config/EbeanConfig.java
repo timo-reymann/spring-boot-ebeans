@@ -12,10 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties("ebean")
 @Data
 public class EbeanConfig {
-    /**
-     * Auto commit
-     */
-    private boolean autoCommit = true;
+
 
     /**
      * Native ilike expression for supported dbms
@@ -26,4 +23,14 @@ public class EbeanConfig {
      * Enable auto tune
      */
     private boolean enableAutoTune = true;
+
+    /**
+     * Generate tables scripts
+     */
+    private boolean ddlGenerate = false;
+
+    /**
+     * Run table scripts
+     */
+    private boolean ddlRun = false;
 }

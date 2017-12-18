@@ -5,7 +5,7 @@
 
     <groupId>com.github.timo-reymann</groupId>
     <artifactId>spring-boot-ebean</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.4</version>
     <packaging>jar</packaging>
 
     <name>spring-boot-ebean</name>
