@@ -16,6 +16,9 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Timo Reymann
@@ -65,6 +68,15 @@ public class EbeanAutoConfiguration {
 
         logSetting("ddlRun", ebeanConfig.isDdlRun());
         config.setDdlRun(ebeanConfig.isDdlRun());
+
+        List<String> packages = new ArrayList<>();
+        packages.addAll(Arrays.asList(ebeanConfig.getEntityPackages()));
+        packages.addAll(Arrays.asList(ebeanConfig.getQueryBeanPackages()));
+
+        if (packages.size() > 0) {
+            logSetting("packages", String.join(", ", packages));
+            config.setPackages(packages);
+        }
 
         if (ebeanConfig.isEnableAutoTune()) {
             logSetting("auto tune", ebeanConfig.isEnableAutoTune());

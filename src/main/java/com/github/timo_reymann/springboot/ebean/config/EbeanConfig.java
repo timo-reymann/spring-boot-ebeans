@@ -4,6 +4,8 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.List;
+
 /**
  * @author Timo Reymann
  * @since 14.12.17
@@ -12,8 +14,6 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties("ebean")
 @Data
 public class EbeanConfig {
-
-
     /**
      * Native ilike expression for supported dbms
      */
@@ -33,4 +33,14 @@ public class EbeanConfig {
      * Run table scripts
      */
     private boolean ddlRun = false;
+
+    /**
+     * Packages to scan for entities
+     */
+    private String[] entityPackages;
+
+    /**
+     * Query bean packages to scan
+     */
+    private String[] queryBeanPackages;
 }
