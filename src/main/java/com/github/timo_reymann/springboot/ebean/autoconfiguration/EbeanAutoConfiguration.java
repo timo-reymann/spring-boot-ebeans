@@ -70,8 +70,11 @@ public class EbeanAutoConfiguration {
         config.setDdlRun(ebeanConfig.isDdlRun());
 
         List<String> packages = new ArrayList<>();
-        packages.addAll(Arrays.asList(ebeanConfig.getEntityPackages()));
-        packages.addAll(Arrays.asList(ebeanConfig.getQueryBeanPackages()));
+        if (ebeanConfig.getEntityPackages() != null)
+            packages.addAll(Arrays.asList(ebeanConfig.getEntityPackages()));
+
+        if (ebeanConfig.getQueryBeanPackages() != null)
+            packages.addAll(Arrays.asList(ebeanConfig.getQueryBeanPackages()));
 
         if (packages.size() > 0) {
             logSetting("packages", String.join(", ", packages));
