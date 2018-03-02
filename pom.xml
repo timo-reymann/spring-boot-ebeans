@@ -5,7 +5,7 @@
 
     <groupId>com.github.timo-reymann</groupId>
     <artifactId>spring-boot-ebean</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.6</version>
     <packaging>jar</packaging>
 
     <name>spring-boot-ebean</name>
@@ -33,7 +33,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.9.RELEASE</version>
+        <version>2.0.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
