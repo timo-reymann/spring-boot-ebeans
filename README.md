@@ -50,31 +50,10 @@ This project is available via the maven central,  you can include it by adding i
 <plugin>
     <groupId>io.repaint.maven</groupId>
     <artifactId>tiles-maven-plugin</artifactId>
-    <version>2.8</version>
-    <extensions>true</extensions>
-    <configuration>
-        <tiles>
-            <tile>org.avaje.tile:java-compile:1.1</tile>
-            <tile>io.ebean.tile:enhancement:5.1</tile>
-        </tiles>
-    </configuration>
-    </plugin>
+</plugin>
 <plugin>
     <groupId>io.ebean</groupId>
     <artifactId>ebean-maven-plugin</artifactId>
-    <version>11.5.1</version>
-    <executions>
-        <execution>
-            <id>main</id>
-            <phase>process-classes</phase>
-            <configuration>
-                <transformArgs>debug=1</transformArgs>
-            </configuration>
-            <goals>
-                <goal>enhance</goal>
-            </goals>
-        </execution>
-    </executions>
 </plugin>
 ```
 
