@@ -61,4 +61,6 @@ Please dont forget to add ebean.entity-packages to your spring configuration so 
 
 
 # Additional resources
-For more information head over to [ebean-orm.github.io](http://ebean-orm.github.io/)
+For more information about ebeans head over to [ebean-orm.github.io](http://ebean-orm.github.io/).
+
+For javadoc please click [here](https://www.javadoc.io/doc/com.github.timo-reymann/spring-boot-ebean)
