@@ -40,7 +40,7 @@ This project is available via the maven central,  you can include it by adding i
 <dependency>
     <groupId>com.github.timo-reymann</groupId>
     <artifactId>spring-boot-ebean</artifactId>
-    <version>0.0.7</version>
+    <version>1.0.0</version>
 </dependency>
  ```
  
